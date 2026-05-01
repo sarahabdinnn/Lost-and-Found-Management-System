@@ -43,6 +43,8 @@
             this.lblClear = new System.Windows.Forms.Label();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtIDD = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -102,7 +104,7 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(12, 314);
+            this.txtPass.Location = new System.Drawing.Point(12, 352);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(287, 22);
             this.txtPass.TabIndex = 2;
@@ -112,7 +114,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 281);
+            this.label2.Location = new System.Drawing.Point(12, 317);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 21);
             this.label2.TabIndex = 3;
@@ -125,12 +127,13 @@
             this.bttnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnRegister.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnRegister.ForeColor = System.Drawing.Color.White;
-            this.bttnRegister.Location = new System.Drawing.Point(12, 364);
+            this.bttnRegister.Location = new System.Drawing.Point(12, 390);
             this.bttnRegister.Name = "bttnRegister";
             this.bttnRegister.Size = new System.Drawing.Size(287, 44);
             this.bttnRegister.TabIndex = 4;
             this.bttnRegister.Text = "Register";
             this.bttnRegister.UseVisualStyleBackColor = false;
+            this.bttnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // pictureBox1
             // 
@@ -158,7 +161,7 @@
             // 
             this.checkBoxPass.AutoSize = true;
             this.checkBoxPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxPass.Location = new System.Drawing.Point(147, 424);
+            this.checkBoxPass.Location = new System.Drawing.Point(148, 449);
             this.checkBoxPass.Name = "checkBoxPass";
             this.checkBoxPass.Size = new System.Drawing.Size(139, 22);
             this.checkBoxPass.TabIndex = 7;
@@ -170,7 +173,7 @@
             // 
             this.lblClear.AutoSize = true;
             this.lblClear.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClear.Location = new System.Drawing.Point(42, 426);
+            this.lblClear.Location = new System.Drawing.Point(42, 451);
             this.lblClear.Name = "lblClear";
             this.lblClear.Size = new System.Drawing.Size(49, 20);
             this.lblClear.TabIndex = 8;
@@ -193,12 +196,29 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.RoyalBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(43, 463);
+            this.linkLabel1.Location = new System.Drawing.Point(43, 487);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(216, 16);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Already have an account?Login";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 267);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 21);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "ID:";
+            // 
+            // txtIDD
+            // 
+            this.txtIDD.Location = new System.Drawing.Point(12, 291);
+            this.txtIDD.Name = "txtIDD";
+            this.txtIDD.Size = new System.Drawing.Size(287, 22);
+            this.txtIDD.TabIndex = 11;
             // 
             // RegisterForm
             // 
@@ -206,6 +226,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(320, 550);
+            this.Controls.Add(this.txtIDD);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lblClear);
             this.Controls.Add(this.checkBoxPass);
@@ -246,6 +268,8 @@
         private System.Windows.Forms.Label lblClear;
         private System.Windows.Forms.PictureBox pictureBoxClose;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtIDD;
     }
 }
 
